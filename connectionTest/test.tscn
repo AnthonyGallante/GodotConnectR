@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://b11xb2orf4ttj"]
+
+[ext_resource type="Script" uid="uid://cit1mgp8h2n6w" path="res://connectionTest/test.gd" id="1_seq1h"]
+[ext_resource type="Texture2D" uid="uid://ohkfidgdo3ak" path="res://icons/R_logo.svg.png" id="2_klqgx"]
+
+[node name="test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_seq1h")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -106.0
+offset_top = -25.0
+offset_right = 106.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Connect to R
+"
+icon = ExtResource("2_klqgx")
+expand_icon = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -267.0
+offset_top = 88.0
+offset_right = 267.0
+offset_bottom = 157.0
+grow_horizontal = 2
+text = "When the http request is completed, this text will change."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
