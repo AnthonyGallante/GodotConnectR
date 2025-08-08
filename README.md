@@ -47,9 +47,9 @@ Project Structure
 ├── godot-project/
 │   ├── connectionTest/  # Location of Test Scene
 │   └── icons/           # Contains R and Godot logos
-├── R/
-│   ├── server.R          # Main server file
-│   └── api.R             # API endpoints (optional)
+│   ├── R/
+│       ├── server.R          # Main server file
+│       └── api.R             # API endpoints (optional)
 └── README.md
 ```
 
