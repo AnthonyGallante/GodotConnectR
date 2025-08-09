@@ -32,8 +32,8 @@ bashRscript server.R
 
 Verify the server is running:
 
-You should see: `Running plumber API at http://127.0.0.1:8000`
-Test in browser: `http://127.0.0.1:8000/test`
+You should see: `Running plumber API at http://127.0.0.1:8000`<br>
+Test in browser: `http://127.0.0.1:8000/test`<br>
 Expected response: `{"message":["Hello to Godot from R!"]}`
 
 ## Running the Godot Client
@@ -55,9 +55,14 @@ Project Structure
 
 ## Troubleshooting
 
-Port 8000 in use: Change port in `server.R` and update Godot script
-Connection refused: Ensure R server is running before starting Godot
-404 errors: Verify endpoint paths match between R (`@get /test`) and Godot (`/test`)
+Port 8000 in use: <br>
+Change port in `server.R` and update Godot script
+
+Connection refused: <br>
+Ensure R server is running before starting Godot
+
+404 errors: <br>
+Verify endpoint paths match between R (`@get /test`) and Godot (`/test`)
 
 ## Dependencies Summary
 
@@ -68,10 +73,11 @@ R Packages:<br>
 
 ## Example:
 
-It's not much to look at, but it's honest work.
+If you've run this example correctly, it should look like this. It's not much to look at, but it's honest work.
 
 https://github.com/user-attachments/assets/191eae39-bbbe-4230-af2c-23ee0091c083
 
+If you're reading this, your project is probably a weird one. Good luck! You'll need it.
 
 
 
