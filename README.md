@@ -1,6 +1,7 @@
 # Godot-R Bridge Template
 
-An example project for connecting Godot applications with R backends via HTTP API using the plumber package.
+An example project for connecting Godot applications with R backends via HTTP API using the plumber package. 
+More complex requests are certainly possible, but this project will help serve as the minimum example necessary to get started.
 
 ## Prerequisites
 
